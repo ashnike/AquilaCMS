@@ -26,6 +26,7 @@ artifacts:
     - services/**/*
     - tests/**/*
     - jsconfig.json
+    - Dockerfile
     - ecosystem.config.example.js
     - package-aquila.json
     - server.js
