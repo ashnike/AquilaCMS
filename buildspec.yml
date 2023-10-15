@@ -5,10 +5,11 @@ phases:
     runtime-versions:
       nodejs: 18  # Use Node.js 18
     commands:
+      - yarn install
 
-  build:
-    commands:
-      - npm run build default_theme_2
+  #build:
+    #commands:
+      #- npm run build default_theme_2
       
 artifacts:
   files:
