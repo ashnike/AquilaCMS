@@ -13,7 +13,7 @@ RUN apt-get update -y && apt-get install -y wget fontconfig libjpeg-dev libssl-d
 # Install curl
 RUN apt-get install -y curl
 # Install Node.js 14 (or your desired version)
-RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt-get install -y nodejs
 # Install NVM and Node.js
 #RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash && \
