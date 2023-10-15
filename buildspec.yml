@@ -1,0 +1,34 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18  # Use Node.js 18
+    commands:
+      - npm install
+
+  build:
+    commands:
+      - npm run build default_theme_2
+
+      
+artifacts:
+  files:
+    - backoffice/**/*
+    - config/**/* 
+    - utils/**/*
+    - installer/**/*
+    - documentations/**/*
+    - middleware/**/*
+    - orm/**/*
+    - themes/**/*
+    - routes/**/*
+    - scripts/**/*
+    - services/**/*
+    - tests/**/*
+    - jsconfig.json
+    - ecosystem.config.example.js
+    - package-aquila.json
+    - server.js
+    - package.json
+    - appspec.yml

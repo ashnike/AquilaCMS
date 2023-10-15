@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/AquilaCMS # Adjust this path to your application's destination on the server
+hooks:
+  BeforeInstall:
+    - location: scripts/before.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/after.sh
+      timeout: 300
+      runas: root
