@@ -11,7 +11,6 @@ if [ "$(sudo docker ps -aq -f name=$image_name)" ]; then
     sudo docker stop $image_name
     sudo docker rm $image_name
 fi
-
-# Run the Docker container
+sudo docker build -t auxila:latest .
 sudo docker run -d -p 3010:3010 --name auxila --restart always auxila:latest
 
