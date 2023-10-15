@@ -13,7 +13,7 @@ RUN apt-get update -y && \
     wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb && \
     dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb && \
     apt install -f && \
-    apt-get install -y gnupg curl
+    apt-get install -y gnupg curl mongodb-clients
 
 # Install Node.js 16
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
