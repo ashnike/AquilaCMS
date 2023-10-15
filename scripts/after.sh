@@ -1,5 +1,5 @@
 #!/bin/bash
-# Navigate to your application
+# Na
 cd /home/ubuntu/AquilaCMS
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
